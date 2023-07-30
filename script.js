@@ -62,5 +62,5 @@ setTimeout(function(){
 }, 3000)
 
 chart.seriesContainer.events.on("down", function(){
- animation.stop();
+// animation.stop();
 })
