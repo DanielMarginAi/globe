@@ -4,9 +4,9 @@ body {
 
 #chartdiv {
   width: 200%;
-  height: 500px;
+  height: 200%;
   max-width: 100%;
   background-color: #000033;
-  position: relative;
+  position: absolute;
   overflow: hidden;
 }
