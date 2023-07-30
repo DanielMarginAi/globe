@@ -3,8 +3,10 @@ body {
 }
 
 #chartdiv {
-  width: 100%;
+  width: 200%;
   height: 500px;
-max-width:100%;
-  background-color:#000033;
+  max-width: 100%;
+  background-color: #000033;
+  position: relative;
+  overflow: hidden;
 }
