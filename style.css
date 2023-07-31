@@ -3,8 +3,8 @@ body {
 }
 
 #chartdiv {
-  width: 400%;
-  height: 400%;
+  width: 300%;
+  height: 300%;
   max-width: 100%;
   background-color: #000033;
   position: absolute;
