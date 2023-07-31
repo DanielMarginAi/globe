@@ -9,4 +9,5 @@ body {
   background-color: #000033;
   position: absolute;
   overflow: hidden;
+  padding-left: 80px;
 }
