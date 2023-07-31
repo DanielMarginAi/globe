@@ -40,7 +40,7 @@ polygonTemplate.fill = am4core.color("#00030b");
 polygonTemplate.stroke = am4core.color("#000033");
 polygonTemplate.strokeWidth = 0.5;
 polygonTemplate.cursorOverStyle = am4core.MouseCursorStyle.pointer;
-polygonTemplate.url = "https://www.datadrum.com/main.php?package={id}";
+polygonTemplate.url = "https://teslafinder.eu/inventory";
 polygonTemplate.urlTarget = "_blank";
 
 var graticuleSeries = chart.series.push(new am4maps.GraticuleSeries());
