@@ -42,6 +42,9 @@ polygonTemplate.strokeWidth = 0.5;
 polygonTemplate.cursorOverStyle = am4core.MouseCursorStyle.pointer;
 polygonTemplate.url = "https://teslafinder.eu/inventory";
 polygonTemplate.urlTarget = "_blank";
+chart.logo.disabled = true;
+
+
 
 var graticuleSeries = chart.series.push(new am4maps.GraticuleSeries());
 graticuleSeries.mapLines.template.line.stroke = am4core.color("#ffffff");
