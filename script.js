@@ -25,7 +25,7 @@ chart.panBehavior = "rotateLongLat";
 chart.deltaLatitude = -20;
 chart.logo.disabled = true;
 
-chart.padding(20,20,20,20);
+chart.padding(20,0,20,20);
 
 // Create map polygon series
 var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
