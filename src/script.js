@@ -1,10 +1,10 @@
 /**
  * ---------------------------------------
  * This demo was created using amCharts 4.
- * 
+ *
  * For more information visit:
  * https://www.amcharts.com/
- * 
+ *
  * Documentation is available at:
  * https://www.amcharts.com/docs/v4/
  * ---------------------------------------
@@ -23,7 +23,8 @@ chart.geodata = am4geodata_worldLow;
 chart.projection = new am4maps.projections.Orthographic();
 chart.panBehavior = "rotateLongLat";
 chart.deltaLatitude = -20;
-chart.padding(20,20,20,20);
+chart.padding(20, 20, 20, 20);
+chart.logo.disabled = true;
 
 // Create map polygon series
 var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
@@ -47,19 +48,22 @@ graticuleSeries.mapLines.template.line.stroke = am4core.color("#ffffff");
 graticuleSeries.mapLines.template.line.strokeOpacity = 0.08;
 graticuleSeries.fitExtent = false;
 
-
 chart.backgroundSeries.mapPolygons.template.polygon.fillOpacity = 0.1;
-chart.backgroundSeries.mapPolygons.template.polygon.fill = am4core.color("#ffffff");
+chart.backgroundSeries.mapPolygons.template.polygon.fill =
+  am4core.color("#ffffff");
 
 // Create hover state and set alternative fill color
 var hs = polygonTemplate.states.create("hover");
 hs.properties.fill = chart.colors.getIndex(0).brighten(-0.5);
 
 let animation;
-setTimeout(function(){
-  animation = chart.animate({property:"deltaLongitude", to:100000}, 20000000);
-}, 3000)
+setTimeout(function () {
+  animation = chart.animate(
+    { property: "deltaLongitude", to: 100000 },
+    20000000
+  );
+}, 3000);
 
-chart.seriesContainer.events.on("down", function(){
-//  animation.stop();
-})
+chart.seriesContainer.events.on("down", function () {
+  //  animation.stop();
+});

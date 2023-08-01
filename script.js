@@ -23,6 +23,7 @@ chart.geodata = am4geodata_worldLow;
 chart.projection = new am4maps.projections.Orthographic();
 chart.panBehavior = "rotateLongLat";
 chart.deltaLatitude = -20;
+chart.logo.disabled = true;
 
 chart.padding(20,20,20,20);
 
